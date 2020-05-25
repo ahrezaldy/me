@@ -88,7 +88,7 @@ function css() {
     }))
     .pipe(gulp.dest("./css"))
     .pipe(rename({
-      suffix: ".min"
+      suffix: ".min.20200525"
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
