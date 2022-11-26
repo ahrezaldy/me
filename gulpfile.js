@@ -10,7 +10,7 @@ const header = require("gulp-header");
 const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require('sass'));
 const uglify = require("gulp-uglify");
 
 // Load package.json for banner
@@ -88,7 +88,7 @@ function css() {
     }))
     .pipe(gulp.dest("./css"))
     .pipe(rename({
-      suffix: ".min.20200525"
+      suffix: ".min.20221125"
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
