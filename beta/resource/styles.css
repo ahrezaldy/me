@@ -431,8 +431,9 @@ section.band {
 .community-card ul.spaced { gap: 0.75rem; }
 .community-card .bullet { color: hsl(var(--primary)); margin-right: 0.5rem; }
 .community-card .item-title { font-weight: 500; color: hsl(var(--foreground)); }
-.community-card .item-title.linkable:hover { color: hsl(var(--primary)); text-decoration: underline; text-underline-offset: 4px; }
+.community-card .linkable:hover { color: hsl(var(--primary)); text-decoration: underline; text-underline-offset: 4px; }
 .community-card .item-sub { font-size: 0.75rem; color: hsl(var(--muted-foreground)); }
+.community-card .item-sub + .item-sub { margin-top: 0.15rem; }
 
 /* ---------- Contact ---------- */
 #contact .lead-text { margin-bottom: 1.5rem; }
