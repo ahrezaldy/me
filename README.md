@@ -1,19 +1,39 @@
-# Arif H Rezaldy resume
+# Arif H. Rezaldy — Portfolio
 
-## Usage
+Personal portfolio site for Arif H. Rezaldy, Senior Engineering Manager.
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+## Overview
 
-#### Gulp Tasks
+A single-page, dependency-free static website. No build step, no frameworks —
+just HTML, CSS, and a small amount of vanilla JavaScript.
 
-- `gulp` the default task that builds everything
-- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
+## Project structure
 
-You must have npm installed globally in order to use this build environment.
+```
+index.html            Main page
+favicon.ico           Site icon
+resource/
+├── styles.css        All styles
+├── script.js         Interactions (scroll reveal, nav, footer year)
+├── fonts/            Self-hosted fonts (woff2) + fonts.css
+└── images/           Profile photo and company logos
+```
 
-## Copyright and License
+## Running locally
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+Because it is plain static files, just open `index.html` in a browser. If you
+need a local server (e.g. for testing on a phone), any static server works:
+
+```bash
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```
+
+## Deployment
+
+This is a plain static site, so it can be deployed easily from the `master`
+branch. Pushing to `master` publishes the latest version.
+
+## License
+
+See [LICENSE](LICENSE).
